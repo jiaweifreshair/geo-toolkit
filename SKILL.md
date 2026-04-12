@@ -6,7 +6,15 @@ description: GEO（生成式引擎优化）分析与优化工作流。针对 Per
 # GEO Toolkit — 生成式引擎优化
 
 GEO（Generative Engine Optimization）是优化内容以被 AI 引擎引用的方法论。
-目标平台：**Perplexity** / **ChatGPT Search** / **Google AI Overviews** / **Bing Copilot** / **Claude**
+目标平台：**Perplexity** / **ChatGPT Search** / **Google AI Overviews** / **Bing Copilot** / **Claude** / **Codex** / **Gemini**
+
+## Codex & Gemini 兼容说明
+
+- **工具映射**：将概念上的 `WebSearch / WebFetch / web_access` 映射为当前环境的可用工具：
+  - 在 **Codex** 中，理解为 `web.search_query`、`web.open`、`web.click` 或必要的命令行辅助。
+  - 在 **Gemini CLI** 中，理解为 `google_web_search`、`web_fetch` 等原生可用工具。
+- **触发方式**：不依赖特定专属命令；在对话里提及“用 geo-toolkit 分析某站点/品牌”或“进行 GEO 分析”即可触发。
+- **降级分析**：若某 AI 平台受限无法直接访问，请使用公开搜索引擎检索其引用页面、利用结构化信号做评估，并明确向用户标示为估算结果。
 
 ## 与传统 SEO 的核心区别
 

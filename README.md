@@ -1,6 +1,6 @@
-# GEO Toolkit — Claude Code Skill
+# GEO Toolkit — AI CLI Skill
 
-Generative Engine Optimization (GEO) skill for Claude Code. Audit and improve your brand's visibility in AI-generated answers — Perplexity, ChatGPT Search, Google AI Overviews, Bing Copilot, and more.
+Generative Engine Optimization (GEO) skill for AI CLI agents (Claude Code, Codex, Gemini CLI). Audit and improve your brand's visibility in AI-generated answers — Perplexity, ChatGPT Search, Google AI Overviews, Bing Copilot, and more.
 
 > **GEO vs SEO:** Traditional SEO gets you on the list. GEO gets you in the answer.
 
@@ -126,11 +126,23 @@ Full tool guide: [`references/tools.md`](references/tools.md)
 
 ## Installation
 
+### For Claude Code
 ```bash
 git clone https://github.com/jiaweifreshair/geo-toolkit ~/.claude/skills/geo-toolkit
 ```
+Then use `/geo-toolkit` or ask Claude directly.
 
-Or install via Claude Code: **Settings → Skills → Install from file** using `geo-toolkit.skill`
+### For Codex
+```bash
+git clone https://github.com/jiaweifreshair/geo-toolkit ~/.codex/skills/geo-toolkit
+```
+Then ask Codex: "帮我用 geo-toolkit 分析品牌"
+
+### For Gemini CLI
+```bash
+git clone https://github.com/jiaweifreshair/geo-toolkit ~/.agents/skills/geo-toolkit
+```
+Then ask Gemini: "请运行 geo-toolkit 分析品牌"
 
 ## License
 
